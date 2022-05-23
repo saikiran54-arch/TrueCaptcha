@@ -1,0 +1,202 @@
+:root{
+    --first-text-color:white;
+    --second-text-color:#333;
+    --main-background-color:#22195a;
+      /*========== Colors ==========*/
+  /* Change favorite color - Blue 210 - Purple 250 - Green 142 - Pink 340*/
+  --hue-color: 210;
+
+  /* HSL color mode */
+  --first-color: hsl(var(--hue-color), 96%, 54%);
+  --first-color-light: hsl(var(--hue-color), 96%, 69%);
+  --first-color-alt: hsl(var(--hue-color), 96%, 37%);
+  --first-color-lighter: hsl(var(--hue-color), 14%, 96%);
+  --title-color: hsl(var(--hue-color), 12%, 15%);
+  --text-color: hsl(var(--hue-color), 12%, 35%);
+  --text-color-light: hsl(var(--hue-color), 12%, 65%);
+  --white-color: #FFF;
+  --body-color: hsl(var(--hue-color), 100%, 99%);
+  --container-color: #FFF;
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Lato', sans-serif;
+  --pricing-font: 'Rubik', sans-serif;
+  --biggest-font-size: 1.75rem;
+  --normal-font-size: .938rem;
+  --h2-font-size: 1.25rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+  --tiny-font-size: .625rem;
+
+  /*========== Margenes Bottom ==========*/
+  --mb-0-25: .25rem;
+  --mb-0-5: .5rem;
+  --mb-1: 1rem;
+  --mb-1-25: 1.25rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+
+
+}
+@media screen and (min-width: 968px) {
+    :root {
+      --biggest-font-size: 2.125rem;
+      --h2-font-size: 1.5rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+      --smaller-font-size: .813rem;
+      --tiny-font-size: .688rem;
+    }
+  }
+
+/* base */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--second-text-color);
+    line-height: 1.8;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:var(--second-text-color);
+}
+
+h1,h2{
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 12px 0;
+}
+
+p{
+    margin: 12px 0;
+}
+img{
+    width: 100%;
+}
+.container{
+    max-width: 1100px;
+    margin:0 auto;
+}
+.card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+}
+.carz {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: rgb(236, 27, 97);
+    color:whitesmoke;
+    border-radius: 10px;
+}
+.btn:hover{
+    transform: scale(.95);
+    background-color: rgb(168, 38, 81);
+}
+.text-center{
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid-3{
+    grid-template-columns: repeat(3,1fr);
+}
+
+/* Margins */
+.my-1{
+    margin: 1rem 0;
+}
+.my-2{
+    margin: 1.5rem 0;
+}
+.my-3{
+    margin: 2rem 0;
+}
+.my-4{
+   margin: 3rem 0; 
+}
+.my-5{
+    margin: 4rem 0;
+}
+.m-1{
+    margin: 1rem;
+}
+.m-2{
+    margin: 1.5rem;
+}
+.m-3{
+    margin: 2rem;
+}
+.m-4{
+   margin: 3rem; 
+}
+.m-5{
+    margin: 4rem;
+}
+
+/* Padding */
+.py-1{
+    margin: 1rem 0;
+}
+.py-2{
+    margin: 1.5rem 0;
+}
+.py-3{
+    margin: 2rem 0;
+}
+.py-4{
+   margin: 3rem 0; 
+}
+.py-5{
+    margin: 4rem 0;
+}
+.p-1{
+    margin: 1rem;
+}
+.p-2{
+    margin: 1.5rem;
+}
+.p-3{
+    margin: 2rem;
+}
+.p-4{
+   margin: 3rem; 
+}
+.p-5{
+    margin: 4rem;
+}
